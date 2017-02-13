@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  body: MyText
+  votable_id: 1
+  votable_type: MyString
   user_id: 1
+  downvote: false
 
 two:
-  title: MyString
-  body: MyText
+  votable_id: 1
+  votable_type: MyString
   user_id: 1
+  downvote: false
