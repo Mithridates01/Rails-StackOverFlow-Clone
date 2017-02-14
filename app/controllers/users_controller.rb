@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     if @user.save
       questions_path
     else
-      @errors = @user.errors.full_messages
+      p @errors = @user.errors.full_messages
       redirect_to(:back)
     end
   end
