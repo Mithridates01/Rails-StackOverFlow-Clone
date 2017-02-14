@@ -9,11 +9,20 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
+      session[]
       questions_path
     else
       @errors = @user.errors.full_messages
        render 'new'
     end
+  end
+
+  def login
+    render 'login'
+  end
+
+  def logout
+
   end
 
 
