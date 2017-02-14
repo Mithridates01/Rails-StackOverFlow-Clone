@@ -7,12 +7,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    puts params
+
     if @user.save
       questions_path
     else
-      p @errors = @user.errors.full_messages
-      redirect_to(:back)
+      @errors = @user.errors.full_messages
+       render 'new'
     end
   end
 
