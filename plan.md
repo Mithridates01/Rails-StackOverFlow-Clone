@@ -1,4 +1,6 @@
 user signs up for service
+  -setup user routes
+  -form signup
 user logs in and out
 user writes a question
 
